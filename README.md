@@ -1,5 +1,5 @@
 ﻿<p align="center"> 
-<img src="https://github.com/Rubarez/KickNetLib/blob/master/KickNetLibLogo.png" style="max-height: 250px !important;">
+<img src="https://github.com/Rubarez/KickNetLib/blob/master/res/KickNetLibLogo.png" style="max-height: 250px !important;">
 </p>
 
 <p align="center">
@@ -507,7 +507,7 @@ You can use Postman https://www.postman.com/ to send fake data while your app is
 ## Kick Desktop Tool :wrench:
 
 <p align="center"> 
-<img src="https://github.com/Rubarez/KickNetLib/blob/master/Desktop2.jpg" style="max-height: 250px !important;">
+<img src="https://github.com/Rubarez/KickNetLib/blob/master/res/Desktop2.jpg" style="max-height: 250px !important;">
 </p>
 
 The project contains an application tool for Windows.
