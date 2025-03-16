@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFrameworks>net8.0-windows;net9.0-windows</TargetFrameworks>
+		<Nullable>disable</Nullable>
+		<NoWarn>$(NoWarn);1591;8602</NoWarn>
+		<IsPackable>false</IsPackable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\KickNetLib.Api\KickNetLib.Api.csproj" />
+	  <ProjectReference Include="..\KickNetLib.Client\KickNetLib.Client.csproj" />
+	  <ProjectReference Include="..\KickNetLib.Shared\KickNetLib.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Controls\ChannelAPIControl.cs" />
+		<Compile Update="Controls\TokenAPIControl.cs" />
+		<Compile Update="Controls\EventSuscriptionAPIControl.cs" />
+		<Compile Update="Controls\PublicKeyAPIControl.cs" />
+		<Compile Update="Controls\UserAPIControl.cs" />
+	</ItemGroup>
+
+</Project>

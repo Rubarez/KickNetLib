@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<NoWarn>$(NoWarn);1591;8602</NoWarn>
+		<!--Start Nuget Info-->
+		<Title>KickNetLib.Shared</Title>
+		<RepositoryType>git</RepositoryType>
+		<PackageId>KickNetLib.Shared</PackageId>
+		<Authors>Rubén Álvarez Mel (Rubarez)</Authors>
+		<Description>C# library Shared to use in KickNetLib.Api and KickNetLib.Client</Description>
+		<PackageTags>api; kick; streaming; data; chat; c#; .net; channel</PackageTags>
+		<License>https://github.com/Rubarez/KickNetLib/blob/master/LICENSE</License>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Copyright>Copyright (c) 2025 Rubarez</Copyright>
+		<PackageProjectUrl>https://github.com/Rubarez/KickNetLib</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Rubarez/KickNetLib</RepositoryUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>1.0.0</FileVersion>
+		<PackageReleaseNotes>Library shared data with KickNetLib.Api and KickNetLib.Client.</PackageReleaseNotes>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<IncludeReferencedProjects>true</IncludeReferencedProjects>
+		<!--End Nuget Info-->
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="..\..\README.md" Pack="true" PackagePath=".">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>

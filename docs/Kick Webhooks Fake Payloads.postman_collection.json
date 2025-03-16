@@ -1,0 +1,430 @@
+{
+	"info": {
+		"_postman_id": "434a485f-dbf3-4521-a481-c5da3c15b48d",
+		"name": "Kick Webhooks Fake Payloads",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2607316"
+	},
+	"item": [
+		{
+			"name": "chat.message.sent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Kick-Event-Type",
+						"value": "chat.message.sent",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Version",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Timestamp",
+						"value": "2025-03-13T12:34:56Z",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Signature",
+						"value": "dGVzdA==",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Subscription-Id",
+						"value": "01JP54T5FFZVC61BTHMSN78NMS",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Id",
+						"value": "01F8V9M5Z2E5EX5S6XJ4ZPY72T",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"message_id\": \"unique_message_id_123\",\r\n  \"broadcaster\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 123456789,\r\n    \"username\": \"broadcaster_name\",\r\n    \"is_verified\": true,\r\n    \"profile_picture\": \"https://example.com/broadcaster_avatar.jpg\",\r\n    \"channel_slug\": \"broadcaster_channel\"\r\n  },\r\n  \"sender\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 987654321,\r\n    \"username\": \"sender_name\",\r\n    \"is_verified\": false,\r\n    \"profile_picture\": \"https://example.com/sender_avatar.jpg\",\r\n    \"channel_slug\": \"sender_channel\"\r\n  },\r\n  \"content\": \"This is a test message with emotes!\",\r\n  \"emotes\": [\r\n    {\r\n      \"emote_id\": \"12345\",\r\n      \"positions\": [\r\n        { \"s\": 0, \"e\": 7 }\r\n      ]\r\n    },\r\n    {\r\n      \"emote_id\": \"67890\",\r\n      \"positions\": [\r\n        { \"s\": 20, \"e\": 25 }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7121/api/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7121",
+					"path": [
+						"api",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "channel.followed",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Kick-Event-Type",
+						"value": "channel.followed",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Version",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Timestamp",
+						"value": "2025-03-13T12:34:56Z",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Signature",
+						"value": "dGVzdA==",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Subscription-Id",
+						"value": "01JP54T5FFZVC61BTHMSN78NMS",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Id",
+						"value": "01F8V9M5Z2E5EX5S6XJ4ZPY72T",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"broadcaster\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 123456789,\r\n    \"username\": \"broadcaster_name\",\r\n    \"is_verified\": true,\r\n    \"profile_picture\": \"https://example.com/broadcaster_avatar.jpg\",\r\n    \"channel_slug\": \"broadcaster_channel\"\r\n  },\r\n  \"follower\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 987654321,\r\n    \"username\": \"follower_name\",\r\n    \"is_verified\": false,\r\n    \"profile_picture\": \"https://example.com/sender_avatar.jpg\",\r\n    \"channel_slug\": \"follower_channel\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7121/api/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7121",
+					"path": [
+						"api",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "channel.subscription.renewal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Kick-Event-Type",
+						"value": "channel.subscription.renewal",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Version",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Timestamp",
+						"value": "2025-03-13T12:34:56Z",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Signature",
+						"value": "dGVzdA==",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Subscription-Id",
+						"value": "01JP54T5FFZVC61BTHMSN78NMS",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Id",
+						"value": "01F8V9M5Z2E5EX5S6XJ4ZPY72T",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"broadcaster\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 123456789,\r\n    \"username\": \"broadcaster_name\",\r\n    \"is_verified\": true,\r\n    \"profile_picture\": \"https://example.com/broadcaster_avatar.jpg\",\r\n    \"channel_slug\": \"broadcaster_channel\"\r\n  },\r\n  \"subscriber\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 987654321,\r\n    \"username\": \"subscriber_name\",\r\n    \"is_verified\": false,\r\n    \"profile_picture\": \"https://example.com/sender_avatar.jpg\",\r\n    \"channel_slug\": \"subscriber_channel\"\r\n  },\r\n  \"duration\": 3,\r\n  \"created_at\": \"2025-01-14T16:08:06Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7121/api/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7121",
+					"path": [
+						"api",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "channel.subscription.gifts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Kick-Event-Type",
+						"value": "channel.subscription.gifts",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Version",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Timestamp",
+						"value": "2025-03-13T12:34:56Z",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Signature",
+						"value": "dGVzdA==",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Subscription-Id",
+						"value": "01JP54T5FFZVC61BTHMSN78NMS",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Id",
+						"value": "01F8V9M5Z2E5EX5S6XJ4ZPY72T",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"broadcaster\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 123456789,\r\n    \"username\": \"broadcaster_name\",\r\n    \"is_verified\": true,    \r\n    \"profile_picture\": \"https://example.com/broadcaster_avatar.jpg\",\r\n    \"channel_slug\": \"broadcaster_channel\"\r\n  },\r\n  \"gifter\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 987654321, // null if is_anonymous=true\r\n    \"username\": \"gifter_name\", // null if is_anonymous=true\r\n    \"is_verified\": false, // null if is_anonymous=true\r\n    \"profile_picture\": \"https://example.com/sender_avatar.jpg\", // null if is_anonymous=true\r\n    \"channel_slug\": \"gifter_channel\" // null if is_anonymous=true\r\n  },\r\n  \"giftees\": \r\n  [\r\n    {\r\n      \"is_anonymous\": false,\r\n      \"user_id\": 561654654,\r\n      \"username\": \"giftee_name\",\r\n      \"is_verified\": true,\r\n      \"profile_picture\": \"https://example.com/broadcaster_avatar.jpg\",\r\n      \"channel_slug\": \"giftee_channel\"\r\n    }\r\n  ],\r\n  \"created_at\": \"2025-01-14T16:08:06Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7121/api/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7121",
+					"path": [
+						"api",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "channel.subscription.new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Kick-Event-Type",
+						"value": "channel.subscription.new",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Version",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Timestamp",
+						"value": "2025-03-13T12:34:56Z",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Signature",
+						"value": "dGVzdA==",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Subscription-Id",
+						"value": "01JP54T5FFZVC61BTHMSN78NMS",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Id",
+						"value": "01F8V9M5Z2E5EX5S6XJ4ZPY72T",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"broadcaster\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 123456789,\r\n    \"username\": \"broadcaster_name\",\r\n    \"is_verified\": true,\r\n    \"profile_picture\": \"https://example.com/broadcaster_avatar.jpg\",\r\n    \"channel_slug\": \"broadcaster_channel\"\r\n  },\r\n  \"subscriber\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 987654321,\r\n    \"username\": \"subscriber_name\",\r\n    \"is_verified\": false,\r\n    \"profile_picture\": \"https://example.com/sender_avatar.jpg\",\r\n    \"channel_slug\": \"subscriber_channel\"\r\n  },\r\n  \"duration\": 1,\r\n  \"created_at\": \"2025-01-14T16:08:06Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7121/api/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7121",
+					"path": [
+						"api",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "livestream.status.updated (Live)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Kick-Event-Type",
+						"value": "livestream.status.updated",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Version",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Timestamp",
+						"value": "2025-03-13T12:34:56Z",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Signature",
+						"value": "dGVzdA==",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Subscription-Id",
+						"value": "01JP54T5FFZVC61BTHMSN78NMS",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Id",
+						"value": "01F8V9M5Z2E5EX5S6XJ4ZPY72T",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"broadcaster\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 123456789,\r\n    \"username\": \"broadcaster_name\",\r\n    \"is_verified\": true,\r\n    \"profile_picture\": \"https://example.com/broadcaster_avatar.jpg\",\r\n    \"channel_slug\": \"broadcaster_channel\"\r\n  },\r\n  \"is_live\": true,\r\n  \"title\": \"Stream Title\",\r\n  \"started_at\": \"2025-01-01T11:00:00+11:00\",\r\n  \"ended_at\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7121/api/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7121",
+					"path": [
+						"api",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "livestream.status.updated (Not Live)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Kick-Event-Type",
+						"value": "livestream.status.updated",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Version",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Timestamp",
+						"value": "2025-03-13T12:34:56Z",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Signature",
+						"value": "dGVzdA==",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Subscription-Id",
+						"value": "01JP54T5FFZVC61BTHMSN78NMS",
+						"type": "text"
+					},
+					{
+						"key": "Kick-Event-Message-Id",
+						"value": "01F8V9M5Z2E5EX5S6XJ4ZPY72T",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"broadcaster\": {\r\n    \"is_anonymous\": false,\r\n    \"user_id\": 123456789,\r\n    \"username\": \"broadcaster_name\",\r\n    \"is_verified\": true,\r\n    \"profile_picture\": \"https://example.com/broadcaster_avatar.jpg\",\r\n    \"channel_slug\": \"broadcaster_channel\"\r\n  },\r\n  \"is_live\": false,\r\n  \"title\": \"Stream Title\",\r\n  \"started_at\": \"2025-01-01T11:00:00+11:00\",\r\n  \"ended_at\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7121/api/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7121",
+					"path": [
+						"api",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

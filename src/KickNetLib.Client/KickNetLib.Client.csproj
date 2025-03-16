@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<NoWarn>$(NoWarn);1591;8602</NoWarn>
+		<!--Start Nuget Info-->
+		<Title>KickNetLib.Client</Title>
+		<RepositoryType>git</RepositoryType>
+		<PackageId>KickNetLib.Client</PackageId>
+		<Authors>Rubén Álvarez Mel (Rubarez)</Authors>
+		<Description>C# library to interact with the official Webhooks recived from kick.com</Description>
+		<PackageTags>api; kick; streaming; data; chat; c#; .net; channel</PackageTags>
+		<License>https://github.com/Rubarez/KickNetLib/blob/master/LICENSE</License>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Copyright>Copyright (c) 2025 Rubarez</Copyright>
+		<PackageProjectUrl>https://github.com/Rubarez/KickNetLib</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Rubarez/KickNetLib</RepositoryUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>1.0.0</FileVersion>
+		<PackageReleaseNotes>Library supports official Webhooks.</PackageReleaseNotes>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<IncludeReferencedProjects>true</IncludeReferencedProjects>
+		<!--End Nuget Info-->
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.2" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.2" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.2" />
+		<PackageReference Include="Ulid" Version="1.3.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\KickNetLib.Shared\KickNetLib.Shared.csproj" Pack="Yes"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="..\..\README.md" Pack="true" PackagePath=".">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>
