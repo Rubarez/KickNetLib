@@ -7,7 +7,7 @@
 <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/-.NET%209.0-blueviolet" style="max-height: 300px;"></a>
 <img src="https://img.shields.io/badge/Platform-.NET-lightgrey.svg" style="max-height: 300px;">
 <a href="https://github.com/Rubarez/KickNetLib/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" style="max-height: 300px;"></a>
-<a href="https://www.nuget.org/packages/KickNetkLib"><img src="https://img.shields.io/nuget/dt/KickNetLib?label=NuGet&color=orange" style="max-height: 300px;"></a>
+<a href="https://www.nuget.org/packages/KickNetLib"><img src="https://img.shields.io/nuget/dt/KickNetLib?label=NuGet&color=orange" style="max-height: 300px;"></a>
 </p>
 
 <p align="center">
