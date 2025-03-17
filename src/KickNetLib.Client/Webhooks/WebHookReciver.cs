@@ -61,8 +61,6 @@ namespace KickNetLib.Client.Webhooks
         {
             try
             {
-                _logger.LogDebug("Details of the request: {@context}", context);
-
                 // Check if headers of kick are present
                 if (!ToolHeader.CheckHeaders(context))
                 {
@@ -73,6 +71,9 @@ namespace KickNetLib.Client.Webhooks
                 var headers = ToolHeader.ParseHeaderToObject(context.Request.Headers);
 
                 var body = await new StreamReader(context.Request.Body, Encoding.UTF8).ReadToEndAsync();
+
+                _logger.LogDebug("Details body of the request: {@body}", body);
+                _logger.LogDebug("Details headers of the request: {@headers}", headers);
 
                 if (_validateSender)
                 {

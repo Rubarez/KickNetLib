@@ -18,9 +18,9 @@
 		<PackageProjectUrl>https://github.com/Rubarez/KickNetLib</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Rubarez/KickNetLib</RepositoryUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<Version>1.0.0</Version>
-		<AssemblyVersion>1.0.0</AssemblyVersion>
-		<FileVersion>1.0.0</FileVersion>
+		<Version>1.0.1</Version>
+		<AssemblyVersion>1.0.1</AssemblyVersion>
+		<FileVersion>1.0.1</FileVersion>
 		<PackageReleaseNotes>Library supports official API and Webhooks.</PackageReleaseNotes>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<IncludeReferencedProjects>true</IncludeReferencedProjects>
